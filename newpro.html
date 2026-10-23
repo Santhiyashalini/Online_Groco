@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+      <link rel="stylesheet" href="./newpro.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <!--header starts-->
+  <header>
+    <div class="header-1">
+      <a href="#" class="logo"  ><i class="fas fa-shopping-basket" style="color:white;"></i>MM Groco</a>
+      <form action="" class="search-box-container" >
+    <input type="search" id="search-box" placeholder="Search 1000+ products...">
+    <button type="button" id="srhbtn" >
+        <label for="search-box" id="searchbtn" class="fas fa-search"></label>
+    </button>
+</form>
+    </div>
+    <div class="header-2">
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#category">Category</a>
+         <a href="#product">Products</a>
+         <a href="#deal">Deal</a>
+         <a href="#contact">Contact</a>
+     </nav>
+     <div class="icons">
+       <a href="#shoppingcart" class="fas fa-shopping-cart"></a>
+       <a href="#likes" class="fas fa-heart" ></a>
+       <div  id="login-btn"  class="fas fa-user-circle" ></div>
+     </div>
+    </div>
+  </header>
+  <!--sign in page starts-->
+  <div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+      <form action="" id="form2">
+        <h3>Sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" style="border:1px solid #2e023a" autocomplete="current-email" placeholder="enter the email" id="box1">
+        <span>password</span>
+        <input type="password" name="" class="box" style="border:1px solid #2e023a"  autocomplete="current-password" placeholder="enter the password" id="box" autocomplete="current-password">
+
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me">
+          <label for="remember-me">remember-me</label>
+        </div>
+        <input type="submit" onclick="formsubmit()" value="sign in" class="btnlogin">
+        <p>Forget password ? <a href="#"> Click Here</a></p>
+        <p>don't have an account ? <a href="#">  Create One</a></p>
+      </form>
+     </div>
+  <!--sign in page ends-->
+  <!--header ends-->
+  <!--home section starts-->
+  <section class="home" id="home">
+   <div class="image">
+     <img src="./img pro/shop logo1.webp" class="img-fluid" alt="#"  >
+   </div>
+   <div class="content">
+      <span>Fresh and Elite</span>
+      <h3>Your Daily Need Product</h3>
+      <a href="#" class="btn" >Shop Now</a> 
+   </div>
+ </section>
+ <!--home section ends-->
+ <!--banner section starts-->
+ <section class="banner-container">
+   <div class="banner">
+     <img src="./img pro/fruits.avif" class="img2" style=" height:280px;width:500px;"alt="#"  >
+     <div class="content">
+       <h3>Summer Special Offer</h3>
+       <p>upto 45% offer</p>
+       <a href="#" class="btn">Check out</a>
+     </div>
+   </div>
+   <div class="banner">
+     <img src="./img pro/vegetables.jpeg!w700wp" class="img2" style=" height:280px;width:500px;" alt="#"  >
+      <div class="content">
+       <h3> Limited Duration</h3>
+       <p>upto 50% offer</p>
+       <a href="#" class="btn">Check out</a>
+     </div>
+   </div>
+ </section>
+ <!--banner section ends-->
+ <!--category section starts-->
+ <section class="category" id="category">
+   <h1 class="heading" style="font-weight: bold;">Shop by <span>  CATEGORY  </span></h1>
+   <div class="box-container">
+     <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="box">
+              <h3>Vegetables</h3>
+              <p >upto 50% offer</p>
+              <img src="./img pro/veg new 2.jpg" style="height:170px" alt="...">
+              <a href="#" class="btn">Shop Now</a>
+            </div><br>
+          </div>
+          <div class="col">
+            <div class="box">
+              <h3>Juices</h3>
+              <p >upto 40% offer</p>
+              <img src="./img pro/juices.jpg" alt="...">
+              <a href="#" class="btn">Shop Now</a>
+            </div><br>
+          </div>
+          <div class="col">
+           <div class="box">
+             <h3>Wheat</h3>
+             <p >upto 50% offer</p>
+             <img src="./img pro/wheat.webp" style="width:168px"  alt="...">
+             <a href="#" class="btn">Shop Now</a>
+            </div><br>
+          </div>
+          <div class="col">
+            <div class="box">
+              <h3>Meat</h3>
+              <p >upto 35% offer</p>
+              <img src="./img pro/meat.avif" style="width:168px"  alt="...">
+              <a href="#" class="btn">Shop Now</a>
+            </div>
+          </div><br>
+        </div>
+     </div>
+    </div>  
+  </section>
+ <!--category section ends-->
+ <!--product section starts-->
+ <section class="product" id="product">
+   <h1 class="heading">LATEST  <span>  PRODUCTS  </span></h1>
+   <div class="box-container" >
+     <div class="container text-center">
+       <div class="row">
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-20%</span>
+             <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-share"></a>
+               <a href="#" class="fas fa-eye"></a>
+             </div>
+             <img src="./img pro/banana.avif" alt="..." >
+             <h3 >organic banana</h3>
+             <div class="stars" >
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+             </div>
+             <div class="price" >$10.05 <span> $13.20</span> </div>
+             <div class="quantity">
+               <span>quantity:</span>
+               <input type="number" min="1" max="1000" value="1">
+               <span>/kg</span>
+              </div>
+              <div class="content">   
+               <a href="#" class="btn">Add to Basket</a>
+              </div> 
+           </div><br>
+         </div>
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-20%</span>
+             <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-share"></a>
+               <a href="#" class="fas fa-eye"></a>
+             </div>
+             <img src="./img pro/biscuit.jpg" alt="..." >
+             <h3 >Biscuits</h3>
+             <div class="stars" >
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+             </div>
+             <div class="price" >$20.05 <span> $23.20</span> </div>
+             <div class="quantity">
+               <span>quantity:</span>
+                <input type="number" min="1" max="1000" value="1">
+                <span>/g</span>
+             </div>
+             <div class="content">   
+               <a href="#" class="btn">Add to Basket</a>
+             </div> 
+           </div><br>
+         </div>
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-10%</span>
+             <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+             </div>
+             <img src="./img pro/bovonto.jpg" alt="..." >
+             <h3 >Bovonto</h3>
+             <div class="stars" >
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+             </div>
+             <div class="price" >$40.05 <span> $13.20</span> </div>
+             <div class="quantity">
+               <span>quantity:</span>
+               <input type="number" min="1" max="1000" value="1">
+               <span>/litres</span>
+             </div>
+             <div class="content">   
+               <a href="#" class="btn">Add to Basket</a>
+             </div> 
+           </div><br>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-20%</span>
+             <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-share"></a>
+               <a href="#" class="fas fa-eye"></a>
+             </div>
+             <img src="./img pro/butter.jpg" alt="..." >
+             <h3 >Fresh Butter</h3>
+             <div class="stars" >
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+             </div>
+             <div class="price" >$25.89 <span> $13.20</span> </div>
+             <div class="quantity">
+               <span>quantity:</span>
+               <input type="number" min="1" max="1000" value="1">
+               <span>/kg</span>
+             </div>
+             <div class="content">   
+               <a href="#" class="btn">Add to Basket</a>
+             </div> 
+            </div><br>
+         </div>
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-20%</span>
+             <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+              </div>
+             <img src="./img pro/carrot.avif" alt="..." >
+             <h3 >Fresh Carrot</h3>
+             <div class="stars" >
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+             </div>
+             <div class="price" >$25.05 <span> $13.20</span> </div>
+             <div class="quantity">
+               <span>quantity:</span>
+               <input type="number" min="1" max="1000" value="1">
+               <span>/kg</span>
+             </div>
+             <div class="content">   
+               <a href="#" class="btn">Add to Basket</a>
+             </div> 
+           </div><br>
+         </div>
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-30%</span>
+             <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+             </div>
+             <img src="./img pro/fishes.webp" alt="..." >
+             <h3 >Fresh Fish</h3>
+             <div class="stars" >
+               <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+             </div>
+             <div class="price" >$350 <span> $13.20</span> </div>
+             <div class="quantity">
+                <span>quantity:</span>
+                <input type="number" min="1" max="1000" value="1">
+                <span>/kg</span>
+             </div>
+              <div class="content">   
+                <a href="#" class="btn">Add to Basket</a>
+              </div> 
+           </div><br>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-60%</span>
+             <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+             </div>
+             <img src="./img pro/orange org.avif"  alt="..." >
+             <h3 >Juicy Orange</h3>
+             <div class="stars" >
+               <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+             </div>
+             <div class="price" >$60.05 <span> $80.20</span> </div>
+             <div class="quantity">
+                <span>quantity:</span>
+                <input type="number" min="1" max="1000" value="1">
+                <span>/kg</span>
+             </div>
+             <div class="content">   
+               <a href="#" class="btn">Add to Basket</a>
+             </div> 
+           </div><br>
+         </div>
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-54%</span>
+             <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-share"></a>
+               <a href="#" class="fas fa-eye"></a>
+             </div>
+             <img src="./img pro/wheat.webp" alt="..." >
+             <h3 >High Quality Wheat</h3>
+             <div class="stars" >
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+             </div>
+             <div class="price" >$36 <span> $40.00</span> </div>
+             <div class="quantity">
+               <span>quantity:</span>
+               <input type="number" min="1" max="1000" value="1">
+                <span>/kg</span>
+             </div>
+             <div class="content">   
+               <a href="#" class="btn">Add to Basket</a>
+             </div> 
+           </div><br>
+         </div>
+         <div class="col">
+           <div class="box" >
+             <span class="discount">-15%</span>
+             <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="fas fa-share"></a>
+               <a href="#" class="fas fa-eye"></a>
+             </div>
+             <img src="./img pro/milk.jpg" alt="..." >
+             <h3 >Tasty Milk</h3>
+             <div class="stars" >
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price" >$45 <span> $50.20</span> </div>
+              <div class="quantity">
+               <span>quantity:</span>
+                <input type="number" min="1" max="1000" value="1">
+                <span>/litres</span>
+              </div>
+              <div class="content">   
+               <a href="#" class="btn">Add to Basket</a>
+              </div> 
+           </div>
+          </div><br>
+       </div>
+     </div>
+    </div>
+ </section>
+ <!--product section ends-->
+ <!--deal section starts-->
+ <section class="deal" id="deal">
+    <div class="content">
+      <h3 class="heading" style="color:white;margin-top:-20px;margin-bottom:70px; font-weight:bold">DEAL</span> OF THE DAY</h3>
+      <p class="words" style="font-size:15px;padding:1rem 0;color:white;padding-bottom:0px" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellendus enim architecto reiciendis tenetur dolor aspernatur sint esse aliquam. Laboriosam necessitatibus sit doloribus reprehenderit fugiat nesciunt repellendus provident corporis eos esse vitae earum exercitationem, recusandae, dicta iusto non nobis asperiores? Animi unde minima earum id eveniet perspiciatis quam nemo iure.</p>
+      <div id="root"></div>
+      <a href="#"  class="btn-deal" >Get the Deal</a>
+    </div>
+  </section>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script>
+   function App() {
+      const [dateTime, setDateTime] = React.useState({
+       date: new Date().toLocaleDateString(),
+       time: new Date().toLocaleTimeString(),
+     });
+     React.useEffect(() => {
+       setInterval(() => {
+          setDateTime({
+           date: new Date().toLocaleDateString(),
+           time: new Date().toLocaleTimeString(),
+          });
+        }, 1000),clearInterval()
+      }, []);
+     return React.createElement(
+       "header",
+       { className: "leela" },
+       React.createElement("h1", null, dateTime.date),
+       React.createElement("h2", null, dateTime.time)
+      );
+    }
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(React.createElement(App));
+ </script>
+ <!--deal section ends-->
+ <!--Contact section starts-->
+   <section class="contact" id="contact">
+     <h1 class="heading" style="font-weight:bold"><span>  contact </span>  us</h1>
+     <form id="postmethod">
+       <div class="inputBox">
+         <input type="text" id="username"  placeholder="enter the name" required>
+         <input type="email" id="email"  placeholder="enter the email" required>
+       </div>
+       <div class="inputBox">
+         <input type="number"   id="usernumber" placeholder="enter the number" required>
+         <input type="text"  id="subject" placeholder="enter the subject" required>
+       </div>
+       <textarea placeholder="feedback" name="" id="textarea" cols="30" rows="10" ></textarea>
+       <button type="submit" class="btn" style=" display:inline-block; margin-top:1rem; background-color:#2e023a;color:white; padding:.8rem 3rem;font-size: 1.7rem;text-align:center ; cursor:pointer;border-radius:50px; " >Send message</button>
+     </form>
+    </section>
+  <!--Contact section ends--> 
+  <!--footer section starts-->
+  <section class="footer" >
+    <div class="box-container" >
+      <div class="box">
+        <a href="#" class="logo" style="color: #2e023a;"><i class="fas fa-shopping-basket"  ></i>MM Groco</a>
+        <p>Online shopping saves travelling time and energy, is easily approachable, more varieties of products can be seen, multiple modes of payments, have more discounts and lower prices, product information is provided in a detailed way, no pressure from the seller to buy the product after viewing it!</p>
+        <div class="share">
+          <a href="#" class="btn fab fa-facebook-f"></a>
+          <a href="#"  class="btn fab fa-twitter"></a>
+          <a href="#"  class="btn fab fa-instagram"></a>
+          <a href="#"  class="btn fab fa-linkedin"></a>
+        </div>
+      </div> 
+      <div class="box" >
+        <h3>Our Location</h3>
+        <div class="links">
+          <a href="#India">India</a>
+          <a href="#USA">USA</a>
+          <a href="#France">France</a>
+          <a href="#Russia">Russia</a>
+          <a href="#Japan">Japan</a>
+       </div>
+      </div>
+      <div class="box" >
+       <h3>Quick Links</h3>
+       <div class="links" >
+         <a href="#home">home</a>
+         <a href="#category">category</a>
+         <a href="#product">products</a>
+         <a href="#deal">deal</a>
+         <a href="#contact">contact</a>
+       </div>
+     </div>
+     <div class="box"  >
+       <h3>Download App</h3>
+       <div class="links" >
+         <a href="#google">google</a>
+         <a href="#window xp">window xp</a>
+         <a href="#app store">app store</a>
+       </div>
+     </div>
+   </div>
+   <h4 class="credit" >Created by <span> Santhiya.G</span> | Frontend Project!</h4>
+  </section>
+  <!--footer section ends-->
+  <script src="./newpro.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>   
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
